@@ -1,5 +1,6 @@
 ## PathParser
 ```
+    public static final String DIAMOND = "M256 0L59.83 256 256 512l196.17-256z";
 
     public static Path resizePath(Path path, float width, float height) {
         RectF bounds = new RectF(0, 0, width, height);
@@ -16,7 +17,7 @@
 
       private Path getDiamondPath() {
         
-        Path rectanglePath = resizePath(PathParser.createPathFromPathData(CraftPrintUtils.DIAMOND), mWidthCrop, mHeightCrop);
+        Path rectanglePath = resizePath(PathParser.createPathFromPathData(DIAMOND), mWidthCrop, mHeightCrop);
         if (canvas.getHeight() > canvas.getWidth()) {
             rectanglePath.offset(40, 0);
         } else {

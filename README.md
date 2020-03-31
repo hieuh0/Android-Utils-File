@@ -1,5 +1,6 @@
 ## PathParser
 ```
+   //convert svg to path: https://image.online-convert.com/convert-to-svg
     public static final String DIAMOND = "M256 0L59.83 256 256 512l196.17-256z";
 
     public static Path resizePath(Path path, float width, float height) {
